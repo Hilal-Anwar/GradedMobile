@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.GradedClasses" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <item name="colorPrimary">@color/_20_grade_blue</item>
+        <item name="colorSecondary">@color/_50_grade_blue</item>
+        <item name="colorSecondaryContainer">@color/_50_grade_blue</item>
+        <item name="colorContainer">@color/grade_blue</item>
+        <item name="cardBackgroundColor">@color/golden</item>
+        <item name="iconTint">@color/white</item>
+        <item name="titleNumberInBox">@color/black</item>
+        <item name="progressBarStyle">@color/grade_blue</item>
+        <item name="myHeadingColor">@color/white</item>
+        <item name="android:fontFamily">@font/helvetica_rounded_bold</item>
+    </style>
+
+
+</resources>

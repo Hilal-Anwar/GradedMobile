@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="GradeClasses">
+        <attr name="titleNumberBoxBack" format="color" />
+        <attr name="titleNumberInBox" format="color" />
+        <attr name="myHeadingColor" format="color" />
+    </declare-styleable>
+</resources>

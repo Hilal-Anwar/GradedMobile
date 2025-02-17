@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="timetable">TimeTable</string>
+    <string name="leaders">Leaders</string>
+    <string name="seating">Seating</string>
+    <string name="todo">TODO</string>
+    <string name="leaderboard">Leaderboard</string>
+    <string name="_1">1</string>
+    <string name="textview">TextView</string>
+    <string name="textview1">TextView</string>
+    <string name="_0">0</string>
+    <string name="time">Time</string>
+    <string name="_class">Class</string>
+    <string name="subject">Subject</string>
+    <string name="room_no">Room No.</string>
+    <string name="textview65">TextView</string>
+    <string name="textview34">TextView</string>
+    <string name="textview356">TextView</string>
+    <string name="textview_room">TextView</string>
+</resources>

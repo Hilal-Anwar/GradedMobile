@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@+id/leaders_item">
+    <fragment
+        android:id="@+id/leaders_item"
+        android:label="Leaderboard"
+        android:name="org.helal.gradedclasses.leaderboard.LeaderBoardLayout"
+        tools:layout="@layout/leaderboard_layout" />
+    <fragment
+        android:id="@+id/seating_item"
+        android:label="Seating Plan"
+        android:name="org.helal.gradedclasses.seating_plan.SeatingPlanLayout"
+        tools:layout="@layout/seating_plan_list" />
+</navigation>
