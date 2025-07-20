@@ -11,8 +11,10 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
 
+import org.helal.gradedclasses.DatabaseLoader;
 import org.helal.gradedclasses.MainActivity;
 import org.helal.gradedclasses.R;
+import org.helal.gradedclasses.Student;
 import org.helal.gradedclasses.StudentDataLoader;
 
 import java.io.File;
@@ -31,7 +33,7 @@ public class LeaderBoardLayout extends Fragment {
         View v = inflater.inflate(R.layout.leaderboard_layout, container, false);
         View late_download = v.findViewById(R.id.error_layer);
         file = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS),
-                "/.app/time_table_leader.xlsx");
+                "/.app/LeaderBoard.db");
         recyclerView = v.findViewById(R.id.recyclerView);
         if (MainActivity.studentDataLoader!=null) {
             this.requireActivity().runOnUiThread(() -> {
@@ -51,7 +53,7 @@ public class LeaderBoardLayout extends Fragment {
                 this.requireActivity().runOnUiThread(() -> {
                     if (file.exists()) {
                         late_download.setVisibility(View.INVISIBLE);
-                        MainActivity.studentDataLoader = new StudentDataLoader(file);
+                        MainActivity.studentDataLoader = new StudentDataLoader();
                         inflateRecycleView();
                     }
                 });
@@ -65,7 +67,7 @@ public class LeaderBoardLayout extends Fragment {
 
 
     private void inflateRecycleView() {
-        List<Student> l = MainActivity.studentDataLoader.getStudentStream();
+        List<Student> l = MainActivity.studentDataLoader.getSortedStudentList();
         ArrayList<Student> linkedHashMap = new ArrayList<>();
         for (int i = 0; i <= 20; i++) {
             linkedHashMap.add(l.get(i));

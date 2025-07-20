@@ -43,9 +43,9 @@ public class MainActivity extends AppCompatActivity {
     public static StudentDataLoader studentDataLoader;
     public static TimeTableLoader seating;
     private NetworkState NETWORK_STATE = NetworkState.NOT_PRESENT;
-    DownloadData downloadData = new DownloadData(this, "/.app/time_table_leader.xlsx");
+    DownloadData downloadData = new DownloadData(this, "/.app/LeaderBoard.db");
     File file = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS),
-            "/.app/time_table_leader.xlsx");
+            "/.app/LeaderBoard.db");
     File key = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS),
             "/.app/id.txt");
     public static boolean isDownloadDone = false;
@@ -92,8 +92,8 @@ public class MainActivity extends AppCompatActivity {
         storage_permission();
         if (file.exists()) {
             try {
-                seating = new TimeTableLoader(file);
-                studentDataLoader = new StudentDataLoader(file);
+                //seating = new TimeTableLoader(file);
+                studentDataLoader = new StudentDataLoader();
                 new ScheduledThreadPoolExecutor(1).execute(() -> {
                     if (NETWORK_STATE.equals(NetworkState.PRESENT)) {
                         System.out.println(file.delete());

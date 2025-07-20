@@ -9,6 +9,7 @@ import android.os.Environment;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.sql.DriverManager;
 import java.util.Scanner;
 
 
@@ -23,6 +24,7 @@ public class DownloadData {
 
 
     public void downloadFile() {
+
         DownloadManager manager = (DownloadManager) activity.getSystemService(DOWNLOAD_SERVICE);
         Uri uri = Uri.parse("https://drive.google.com/uc?export=download&id="+getId1());
         System.out.println(uri);

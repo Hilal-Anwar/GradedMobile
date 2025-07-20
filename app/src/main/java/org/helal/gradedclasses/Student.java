@@ -1,4 +1,4 @@
-package org.helal.gradedclasses.leaderboard;
+package org.helal.gradedclasses;
 
 import java.util.Objects;
 
