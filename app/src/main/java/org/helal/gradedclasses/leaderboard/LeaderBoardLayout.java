@@ -11,7 +11,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.helal.gradedclasses.DatabaseLoader;
+
 import org.helal.gradedclasses.MainActivity;
 import org.helal.gradedclasses.R;
 import org.helal.gradedclasses.Student;
@@ -69,7 +69,7 @@ public class LeaderBoardLayout extends Fragment {
     private void inflateRecycleView() {
         List<Student> l = MainActivity.studentDataLoader.getSortedStudentList();
         ArrayList<Student> linkedHashMap = new ArrayList<>();
-        for (int i = 0; i <= 20; i++) {
+        for (int i = 0; i < 24; i++) {
             linkedHashMap.add(l.get(i));
         }
         listOfLeaderBoardView = new ListOfLeaderBoardView(linkedHashMap);

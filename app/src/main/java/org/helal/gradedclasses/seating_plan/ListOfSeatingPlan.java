@@ -1,3 +1,4 @@
+
 package org.helal.gradedclasses.seating_plan;
 
 import android.view.LayoutInflater;
@@ -50,3 +51,4 @@ public class ListOfSeatingPlan extends RecyclerView.Adapter<SeatingPlanView> {
     }
 
 }
+

@@ -1,3 +1,4 @@
+
 package org.helal.gradedclasses.seating_plan;
 
 public class SeatingPlanInfo {
@@ -27,3 +28,4 @@ public class SeatingPlanInfo {
         return room_no;
     }
 }
+

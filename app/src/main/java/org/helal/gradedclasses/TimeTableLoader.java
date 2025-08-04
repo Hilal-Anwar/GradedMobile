@@ -1,8 +1,7 @@
+
 package org.helal.gradedclasses;
 
-import org.apache.poi.ss.usermodel.Row;
-import org.apache.poi.xssf.usermodel.XSSFSheet;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
 import org.helal.gradedclasses.seating_plan.SeatingPlanInfo;
 
 import java.io.File;
@@ -23,7 +22,7 @@ public class TimeTableLoader {
 
     public TimeTableLoader(File f) {
 
-        FileInputStream file;
+      /*  FileInputStream file;
 
         try {
             file = new FileInputStream(f);
@@ -46,7 +45,7 @@ public class TimeTableLoader {
                         "" + row.getCell(3));
                 timeTableLinkedList.add(stu);
             }
-        }
+        }*/
     }
 
     private int getIndex(Date d) {
@@ -55,3 +54,4 @@ public class TimeTableLoader {
         return c.get(Calendar.DAY_OF_WEEK);
     }
 }
+

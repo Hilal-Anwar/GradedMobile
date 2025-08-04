@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace = "org.helal.gradedclasses"
-    compileSdk = 34
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "org.helal.gradedclasses"
@@ -32,14 +32,10 @@ android {
 }
 
 dependencies {
-    implementation("org.xerial:sqlite-jdbc:3.44.1.0")
+    implementation("org.xerial:sqlite-jdbc:3.50.3.0")
     implementation(libs.tedpermission.rx3)
     implementation(libs.navigation.fragment)
     implementation(libs.navigation.ui)
-    implementation(libs.commons.io)
-    implementation(libs.gson)
-    implementation(libs.poi)
-    implementation(libs.poi.ooxml)
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)

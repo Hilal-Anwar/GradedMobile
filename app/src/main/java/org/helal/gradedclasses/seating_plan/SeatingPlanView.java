@@ -1,3 +1,4 @@
+
 package org.helal.gradedclasses.seating_plan;
 
 import android.view.View;
@@ -43,3 +44,4 @@ public class SeatingPlanView extends RecyclerView.ViewHolder {
         return back;
     }
 }
+

@@ -1,3 +1,4 @@
+
 package org.helal.gradedclasses.seating_plan;
 
 
@@ -33,7 +34,7 @@ public class SeatingPlanLayout extends Fragment {
         View v = inflater.inflate(R.layout.seating_plan_list, container, false);
         View late_download = v.findViewById(R.id.error_layer);
         recyclerView = v.findViewById(R.id.recycleView2);
-       /* File file = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS),
+/* File file = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS),
                 "/.app/time_table_leader.xlsx");
         if (MainActivity.seating!=null) {
             this.requireActivity().runOnUiThread(() -> {
@@ -60,6 +61,7 @@ public class SeatingPlanLayout extends Fragment {
 
         }
 */
+
         return v;
     }
 
@@ -77,3 +79,4 @@ public class SeatingPlanLayout extends Fragment {
         super.onDestroyView();
     }
 }
+
